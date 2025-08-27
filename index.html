@@ -1,78 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emergency Service Directory</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Emergency Service Directory</title>
+</head>
+<body class="hind-madurai m-0 p-0">
 
-    <!-- font-awesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- section -1- Header section-->
 
-    <!-- google font style-->
-     <link rel="stylesheet" href="./style.css">
-    <!-- daisyui cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- tailwind cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  </head>
-  <body class="hind-madurai mx-auto w-full m-0 p-0 ">
-<nav class="navbar flex justify-between">
-    <div class="logo flex gap-[10px] p-[25px]">
-        <img class="max-w-[50px]" src="./assets/logo.png" alt="">
-        <p class="font-extrabold text-[#006747]">Emergency <br> Service</p>
+  <header class=" flex justify-between items-center px-4 py-2 bg-white shadow">
+  <!--header left- Logo section -->
+    <div class="flex items-center gap-2">
+      <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
+      <span class="font-extrabold text-[#006747] text-sm sm:text-base">Emergency <br class="sm:hidden"/> Service</span>
     </div>
-    <div class="activities flex gap-[20px] pr-[30px] ">
-    <button class="life-btn flex gap-[10px] justify-center items-center bg-[#41FF6B]/10 w-[120px] rounded-full">
-        <p>0</p>
-        <img class="w-[30px] h-auto" src="./assets/heart.png" alt="">
-    </button>
-    <button class="coin-btn gap-[10px] flex justify-center items-center bg-[#41FF6B]/10 w-[120px] rounded-full">
-        <p>100</p>
-        <img class="w-[25px] h-auto " src="./assets/coin.png" alt="">
-    </button>
-    <button class="copy-btn gap-[10px] flex justify-center items-center bg-[#00A63E] w-[120px] h-[52px] rounded-full text-white">
-        <p>0</p>
-        <p>Copy</p>
-    </button>
-    </div>
-</nav>
-   <main>
-    <section class="banner flex flex-col justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full">
-        <img src="./assets/logo-dark.png" alt="" class="banner-logo w-[92px]">
-        <p class="banner-title text-white font-bold text-[40px] text-center text-wrap">Emergency Service Directory</p>
-        <p class="banner-subtitle text-white font-semibold text-[20px] text-center text-wrap">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
-    </section>
-    <section class="content w-full bg-[#F5FFF6]">
-        <section class="card-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 ">
-            <!-- card -1  -->
-            <div class="card bg-white rounded-lg shadow p-4 h-48">
-                <div class="flex justify-between">
-                <img src="./assets/emergency.png" class="w-[30px]" alt="">
-                <i class="fa-regular fa-heart"></i>
-                </div>
-                <div>
-                    <h1 class="font-bold text-base">Police Helpline Number</h1>
-                    <p>Police</p>
-                </div>
-                <div>
-                    <h1>999</h1>
-                    <p class="badge badge-outline">Police</p>
-                </div>
-                <div>
-                    <button class="btn"><i class="fa-regular fa-copy"></i>Copy</button>
-                    <button class="btn"><i class="fa-regular fa-phone"></i>Call</button>
-                </div>
-            </div>
 
-        </section>
-        <section class="aside"></section>
-    </section>
-   </main>
-  </body>
+    <!-- header-Right stats -->
+    <div class=" flex items-center gap-2">
+      <!-- Heart -->
+      <button class="flex items-center gap-2 bg-gray-100 px-2 py-1 rounded-full text-sm font-bold">
+       <p>0</p>
+       <img class="w-6 h-auto" src="./assets/heart.png" alt="">
+    
+      </button>
+      <!-- Coin -->
+      <button class="flex items-center gap-2 bg-gray-100 px-2 py-1 rounded-full text-sm font-bold">
+       <p class="text-bold">100</p>
+       <img class="w-6 h-auto " src="./assets/coin.png" alt="">
+      </button>
+      <!-- Copy Button -->
+      <button class="flex gap-1 bg-green-600 text-white px-4 py-1 rounded-full class="font-bold hover:bg-green-700">
+      <span>2</span>
+      <span>Copy</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- section-2 - Banner Section -->
+  <section class="w-full bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center justify-center text-center px-4 py-10">
+    <img src="./assets/logo-dark.png" class="w-16 h-16 mb-4">
+
+    <h1 class="text-white font-bold text-2xl sm:text-3xl lg:text-4xl">
+      Emergency Service Directory
+    </h1>
+
+    <p class="text-white text-sm sm:text-base lg:text-lg mt-2 max-w-2xl">
+      Government Emergency Services at Your Fingertip- A Project by Government of the People's Republic of Bangladesh
+    </p>
+  </section>
+
+
+</body>
 </html>
