@@ -5,23 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergency Service Directory</title>
  <!-- font-awesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- google font style-->
      <link rel="stylesheet" href="./style.css">
     <!-- daisyui cdn -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+   
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
 </head>
-<body class="hind-madurai m-0 p-0">
+
+<body class="hind-madurai m-0 p-0 max-w-[1920px]">
 
   <!-- section -1- Navbar section-->
 
@@ -30,7 +28,7 @@
   <!-- Logo section -->
     <div class="flex items-center gap-2">
       <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
-      <div class="font-extrabold text-[#006747] tdiv sm:text-base leading-4">Emergency <br> Service</div>
+      <div class="font-extrabold text-[#006747] sm:text-base leading-4">Emergency <br> Service</div>
     </div>
 
     <!-- stats section -->
@@ -68,16 +66,16 @@
   <!-- section-3 - main section -->
 <main class="bg-[#41FF6B1A]">
     <!-- all contents -->
-     <section class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-[60px]">
+     <section class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-4 sm:p-6 lg:p-[60px]">
 
      <!-- emergency hotline cards section -->
-     <section class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <section class="lg:col-span-9 grid grid-cols-1 w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w[1200px] mx-auto">
       <!-- card-1 -->
        <div class="bg-white shadow rounded-2xl p-4 flex flex-col">
         <!-- logo and heart icon -->
         <div class="flex justify-between mb-4">
         <img src="./assets/emergency.png" class="w-[30px]" alt="">
-        <i class="fa-regular fa-heart"></i>
+        <i class="heart fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">National Emergency Number</h2>
         <p class="text-sm text-gray-500 mb-2">National Emergency</p>
@@ -255,7 +253,7 @@
        
      </section>
      <!-- call history section -->
-     <aside class="col-span-3">
+     <aside class="lg:col-span-3">
           <div class="bg-white shadow rounded-2xl p-4 flex flex-col">
       <div class="flex justify-between items-center mb-3">
         <div class="flex justify-center items-center gap-2">
@@ -265,17 +263,17 @@
         <button class="bg-green-600 text-white px-4 py-1 rounded-full text-sm">Clear</button>
       </div>
       <div class="space-y-3 text-sm text-gray-600">
-        <div class="pb-2 border-1 border-gray-100 rounded-sm p-2">
+        <div class="pb-2 border-[1px] border-gray-100 rounded-sm p-2">
           <p class="font-medium">Fire Service Number</p>
           <p>999</p>
           <p class="text-xs text-gray-400">11:36:58 AM</p>
         </div>
-        <div class="pb-2 border-1 border-gray-100 rounded-sm p-2">
+        <div class="pb-2 border-[1px] border-gray-100 rounded-sm p-2">
           <p class="font-medium">Fire Service Number</p>
           <p>999</p>
           <p class="text-xs text-gray-400">11:36:58 AM</p>
         </div>
-        <div class="pb-2 border-1 border-gray-100 rounded-sm p-2">
+        <div class="pb-2 border-[1px] border-gray-100 rounded-sm p-2">
           <p class="font-medium">Fire Service Number</p>
           <p>999</p>
           <p class="text-xs text-gray-400">11:36:58 AM</p>
@@ -289,6 +287,6 @@
      </section>
      
 </main>
-
+<script src="./script.js"></script>
 </body>
 </html>
