@@ -35,18 +35,18 @@
     <div class=" flex items-center gap-2">
       <!-- Heart -->
       <div class="flex items-center gap-2 bg-[#41FF6B1A] px-2 py-1 rounded-full text-sm font-bold">
-       <p>0</p>
+       <p id="heart-count">0</p>
        <img class="w-6 h-auto" src="./assets/heart.png" alt="">
     
       </div>
       <!-- Coin -->
       <button class="flex items-center gap-2 bg-[#41FF6B1A] px-2 py-1 rounded-full text-sm font-bold">
-       <p class="text-bold">100</p>
+       <p id="coin-count" class="text-bold">100</p>
        <img class="w-6 h-auto " src="./assets/coin.png" alt="">
       </button>
-      <!-- Copy Button -->
+      <!-- Copy count section -->
       <div class="flex gap-1 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-      <span>2</span>
+      <span id="copy-count">0</span>
       <span>Copy</span>
       </div>
     </div>
@@ -75,19 +75,19 @@
         <!-- logo and heart icon -->
         <div class="flex justify-between mb-4">
         <img src="./assets/emergency.png" class="w-[30px]" alt="">
-        <i class="heart fa-regular fa-heart"></i>
+        <i  class="fa-regular fa-heart" ></i>
         </div>
-        <h2 class="font-semibold text-lg">National Emergency Number</h2>
-        <p class="text-sm text-gray-500 mb-2">National Emergency</p>
+        <h2 class="font-semibold text-lg">National Emergency Service</h2>
+        <p class="card-name text-sm text-gray-500 mb-2">National Emergency</p>
          <!-- number and badge -->
         <div class="pb-10">
-        <p class="text-xl font-bold">999</p>
+        <p class="card-number text-xl font-bold">999</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">All</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-2 -->
@@ -98,16 +98,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Police Helpline Number</h2>
-        <p class="text-sm text-gray-500 mb-2">Police</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Police</p>
          <!-- number and badge -->
         <div class="pb-10">
-        <p class="text-xl font-bold">999</p>
+        <p class="card-number text-xl font-bold">999</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Police</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-3 -->
@@ -118,16 +118,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Fire Service Number</h2>
-        <p class="text-sm text-gray-500 mb-2">Fire Service</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Fire Service</p>
          <!-- number and badge -->
        <div class="pb-10">
-        <p class="text-xl font-bold">999</p>
+        <p class="card-number text-xl font-bold">999</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Fire</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-4 -->
@@ -138,16 +138,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Ambulance Service</h2>
-        <p class="text-sm text-gray-500 mb-2">Ambulance</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Ambulance</p>
          <!-- number and badge -->
        <div class="pb-10">
-        <p class="text-xl font-bold">1994-999999</p>
+        <p class="card-number text-xl font-bold">1994-999999</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Health</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-5 -->
@@ -158,16 +158,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Women & Child Helpline</h2>
-        <p class="text-sm text-gray-500 mb-2">Women & Child Helpline</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Women & Child Helpline</p>
          <!-- number and badge -->
         <div class="pb-10">
-        <p class="text-xl font-bold">109</p>
+        <p class="card-number text-xl font-bold">109</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Help</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-6 -->
@@ -178,16 +178,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Anti-Corruption Helpline</h2>
-        <p class="text-sm text-gray-500 mb-2">Anti-Corruption</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Anti-Corruption</p>
          <!-- number and badge -->
         <div class="pb-10">
-        <p class="text-xl font-bold">106</p>
+        <p class="card-number text-xl font-bold">106</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Govt.</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-7 -->
@@ -198,16 +198,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Electricity Helpline</h2>
-        <p class="text-sm text-gray-500 mb-2">Electricity Outage</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Electricity Helpline</p>
          <!-- number and badge -->
         <div class="pb-10">
-        <p class="text-xl font-bold">16216</p>
+        <p class="card-number text-xl font-bold">16216</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Electricity</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-8 -->
@@ -218,16 +218,16 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Brac Helpline</h2>
-        <p class="text-sm text-gray-500 mb-2">Brac</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Brac</p>
          <!-- number and badge -->
         <div class="pb-10">
-        <p class="text-xl font-bold">16445</p>
+        <p class="card-number text-xl font-bold">16445</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">NGO</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
       <!-- card-9 -->
@@ -238,48 +238,33 @@
         <i class="fa-regular fa-heart"></i>
         </div>
         <h2 class="font-semibold text-lg">Bangladesh Railway Helpline </h2>
-        <p class="text-sm text-gray-500 mb-2">Bangladesh Railway</p>
+        <p class="card-name text-sm text-gray-500 mb-2">Bangladesh Railway</p>
          <!-- number and badge -->
        <div class="pb-10">
-        <p class="text-xl font-bold">163</p>
+        <p class="card-number text-xl font-bold">163</p>
         <span class="bg-gray-100 text-xs text-gray-600 rounded-full px-2 py-1 w-fit">Travel</span>
         </div>
         <!-- card buttons -->
         <div class="flex justify-between gap-2 mt-auto">
-        <button class="btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
-        <button class="btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
+        <button class="copy-btn btn flex-1 px-3 py-1 border rounded-md text-gray-600 text-sm"><i class="fa-regular fa-copy"></i>Copy</button>
+        <button class="call-btn btn flex-1 px-3 py-1 bg-[#00A63E] text-white rounded-md text-sm"><i class="fa-solid fa-phone"></i>Call</button>
         </div>
        </div>
        
      </section>
      <!-- call history section -->
+
+
      <aside class="lg:col-span-3">
-          <div class="bg-white shadow rounded-2xl p-4 flex flex-col">
+      <div class="bg-white shadow rounded-2xl p-4 flex flex-col">
       <div class="flex justify-between items-center mb-3">
         <div class="flex justify-center items-center gap-2">
         <i class="fa-regular fa-clock text-gray-700"></i>
         <h2 class="font-semibold text-sm">Call History</h2>
         </div>
-        <button class="bg-green-600 text-white px-4 py-1 rounded-full text-sm">Clear</button>
+        <button id="clear-btn" class="bg-green-600 text-white px-4 py-1 rounded-full text-sm">Clear</button>
       </div>
-      <div class="space-y-3 text-sm text-gray-600">
-        <div class="pb-2 border-[1px] border-gray-100 rounded-sm p-2">
-          <p class="font-medium">Fire Service Number</p>
-          <p>999</p>
-          <p class="text-xs text-gray-400">11:36:58 AM</p>
-        </div>
-        <div class="pb-2 border-[1px] border-gray-100 rounded-sm p-2">
-          <p class="font-medium">Fire Service Number</p>
-          <p>999</p>
-          <p class="text-xs text-gray-400">11:36:58 AM</p>
-        </div>
-        <div class="pb-2 border-[1px] border-gray-100 rounded-sm p-2">
-          <p class="font-medium">Fire Service Number</p>
-          <p>999</p>
-          <p class="text-xs text-gray-400">11:36:58 AM</p>
-        </div>
-
-
+      <div id="call-history-parent" class="space-y-3 text-sm text-gray-600">
       </div>
     </div>
      </aside>
