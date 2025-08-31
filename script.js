@@ -43,10 +43,10 @@ const callButtons =document.getElementsByClassName('call-btn');
        
         const currentTime= new Date().toLocaleTimeString();
         const historyLog = document.createElement('div');
-        historyLog.classList.add('pb-2', 'border-[1px]', 'border-gray-100', 'rounded-sm', 'p-2');
+        historyLog.classList.add('pb-2', 'border-[1px]', 'border-gray-100', 'rounded-sm', 'p-2', 'flex', 'justify-between','items-center');
         historyLog.innerHTML= `
-                  <p class="font-medium">${cardName}</p>
-                  <p>${cardNumber}</p>
+                 <div> <p class="font-medium">${cardName}</p>
+                  <p>${cardNumber}</p> </div>
                   <p class="text-xs text-gray-400">${currentTime}</p>`
         historySection.appendChild(historyLog);
     });

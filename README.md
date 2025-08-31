@@ -38,7 +38,7 @@ While innerHTML is shorter, createElement() is safer since it prevents XSS injec
 answer: 
 When an event (like a click or keypress) happens, the browser processes it in three phases:Capturing Phase (Trickling down), Target Phase and Bubbling Phase (Going up).
 In first phase- the capturing phase, event travels from document → html → body → parent → child (target).The event reaches the actual element that was interacted with in the target phase. If the target has an event handler, it executes. 
-Then again the event travels back upward from child (target) → parent → body → html → document which is referred as bubbling. If the parent has an event handler for the same event, it is also triggered. This process continues, moving up through all ancestor elements, until the event reaches the top of the DOM (the document element).By default, most DOM events bubble, but you can control it by passing {capture: true} in addEventListener.
+Then again the event travels back upward from child (target) → parent → body → html → document which is referred as bubbling. If the parent has an event handler for the same event, it is also triggered. This process continues, moving up through all ancestor elements, until the event reaches the top of the DOM (the document element).By default, most DOM events bubble, but you can control it by passing {capture: true} in addEventListener
 
 
 **4. What is Event Delegation in JavaScript? Why is it useful?**
