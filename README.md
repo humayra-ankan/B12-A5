@@ -1,10 +1,10 @@
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 answer: 
-getElementById selects the element wih a unique id and returns a single DOM element.It  doesn't require any loop since it is a single element.
-getElementByClassName selects all the elements with the same class name and it returns a liveHTML collection To work with all the elements, you usually need to loop through them. It is live- it updates if the DOM changes.
+getElementById selects the element wih a unique id and returns a single DOM element.It  doesn't require any loop since it is a single element. It returns null if the element doesn't exist.
+getElementByClassName selects all the elements with the same class name and it returns a liveHTML collection that updates if DOM changes. To work with all the elements, you usually need to loop through them. 
 
-querySelector and querySelectorAll both work with only CSS selectors.While querySelectorAll selects all the elements that match the CSS selector, the querySelector selects the first matching element that matches the CSS selector. 
+querySelector and querySelectorAll both work with only CSS selectors(id, class, attribute, pseudo-classes, etc.).While querySelectorAll selects all the elements that match the CSS selector, the querySelector selects the first matching element that matches the CSS selector. 
 
 querySelector returns a single DOM element, on the other hand querySelectorAll returns a static Node List- it doesn't update automatically if changes are done in the DOM.
 
@@ -26,21 +26,24 @@ newDiv.classList.add('text');
 <!-- insert the div into the body  -->
 document.body.appendChild(newDiv);
 
-This task can also be done also with .innerHTML.
+This task can also be done also with .innerHTML. 
 
 const newDiv = document.createElement('div');
 newDiv.innerHTML= ` <div class="text">Hello World</div>`
 
+While innerHTML is shorter, createElement() is safer since it prevents XSS injection.
 
 3. What is Event Bubbling and how does it work?
 
-answer:
-When an event occurs (like a click or keypress), it first affects the target element. If an event handler is set for that element, the handler is triggered and the browser executes the associated function. After that, the event bubbles up the DOM tree to the parent element. If the parent has an event handler for the same event, it is also triggered. This process continues, moving up through all ancestor elements, until the event reaches the top of the DOM (the document element).
+answer: 
+When an event (like a click or keypress) happens, the browser processes it in three phases:Capturing Phase (Trickling down), Target Phase and Bubbling Phase (Going up).
+In first phase- the capturing phase, event travels from document → html → body → parent → child (target).The event reaches the actual element that was interacted with in the target phase. If the target has an event handler, it executes. 
+Then again the event travels back upward from child (target) → parent → body → html → document which is referred as bubbling. If the parent has an event handler for the same event, it is also triggered. This process continues, moving up through all ancestor elements, until the event reaches the top of the DOM (the document element).By default, most DOM events bubble, but you can control it by passing {capture: true} in addEventListener.
 
 
 4. What is Event Delegation in JavaScript? Why is it useful?
 
-answer: Event Delegation in JavaScript is a way to handle events more efficiently. Instead of adding an event listener to each individual child element, you attach a single listener to a parent element. The parent then “listens” for events that bubble up from its children, and you can figure out which child triggered the event.
+answer: Event Delegation in JavaScript is a way to handle events more efficiently. Instead of adding an event listener to each individual child element, you attach a single listener to a parent element. The parent then “listens” for events that bubble up from its children, and you can figure out which child triggered the event. After setting listener to the parent we need to use event.target to figure out which child element actually triggered the event.
 
 It is useful because-
 
